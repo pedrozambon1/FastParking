@@ -1,0 +1,120 @@
+<div class="container">
+  <div class="header">
+    <div class="menu">
+      <img src="../../../assets/img/Logo-Verde.png" />
+
+      <div class="body">
+        <button>HOME</button>
+        <button routerLink="/login">CADASTRAR</button>
+        <button>STATISTICS</button>
+        <button>SETTINGS</button>
+      </div>
+    </div>
+  </div>
+  <div class="carrosel">
+    <div
+      class="item"
+      [style.backgroundImage]="'url(' + imagens[indexImagemAtiva] + ')'"
+    ></div>
+
+    <div class="botoes-controle">
+      <button
+        *ngFor="let imagem of imagens; index as i"
+        [class.ativo]="i === indexImagemAtiva"
+        (click)="pararTimer(); ativarImagem(i)"
+      ></button>
+    </div>
+    <img
+      *ngFor="let imagem of imagens"
+      [src]="imagem"
+      width="1"
+      height="1"
+      style="opacity: 0; position: fixed"
+    />
+  </div>
+  <div class="SobreNos">
+    <div class="title">Sobre Nós</div>
+    <div class="body-sobre">
+      <div class="membro">
+        <button
+          class="btnImg"
+          [class.placeholder]="inputImage"
+          type="button"
+        ></button>
+        <input #inputImage style="display: none" type="file" />
+        <div class="nome">Carolina Moreira Pavan</div>
+      </div>
+      <div class="membro">
+        <button
+          class="btnImg"
+          [class.placeholder]="inputImage"
+          type="button"
+        ></button>
+        <input #inputImage style="display: none" type="file" />
+        <div class="nome">Carolina Moreira Pavan</div>
+      </div>
+      <div class="membro">
+        <button
+          class="btnImg"
+          [class.placeholder]="inputImage"
+          type="button"
+        ></button>
+        <input #inputImage style="display: none" type="file" />
+        <div class="nome">Carolina Moreira Pavan</div>
+      </div>
+      <div class="membro">
+        <button
+          class="btnImg"
+          [class.placeholder]="inputImage"
+          type="button"
+        ></button>
+        <input #inputImage style="display: none" type="file" />
+        <div class="nome">Carolina Moreira Pavan</div>
+      </div>
+      <div class="membro">
+        <button
+          class="btnImg"
+          [class.placeholder]="inputImage"
+          type="button"
+        ></button>
+        <input #inputImage style="display: none" type="file" />
+        <div class="nome">Carolina Moreira Pavan</div>
+      </div>
+      <div class="membro">
+        <button
+          class="btnImg"
+          [class.placeholder]="inputImage"
+          type="button"
+        ></button>
+        <input #inputImage style="display: none" type="file" />
+        <div class="nome">Carolina Moreira Pavan</div>
+      </div>
+    </div>
+  </div>
+  <div class="mensagem">
+    <div class="title-msm">ENTRE EM CONTATO CONOSCO</div>
+    <div class="body-msm">
+      <div class="parte1">ver o que vai colocar aqui ebaaaaa</div>
+      <div class="parte2">
+        <div class="toda-msm">
+          <div class="msm1">
+            <input matInput class="input-msm" placeholder="Nome Completo" />
+            <input matInput class="input-msm" placeholder="Assunto" />
+          </div>
+          <div class="msm2">
+            <textarea
+              class="input-msm"
+              matInput
+              placeholder="Mensagem"
+            ></textarea>
+          </div>
+        </div>
+        <div class="btn-msm">
+          <button class="btn-enviar" mat-flat-button color="accent">
+            ENVIAR
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

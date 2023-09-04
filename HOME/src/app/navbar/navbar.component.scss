@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #aee637;
+    width: 90%;
+    padding: 0px 20px;
+    justify-content: space-between;
+    
+    img{
+        
+        width: 7%;
+    }
+}
+.body{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+
+    button{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+
+        border: none;
+        background-color: transparent;
+        color:#012030;
+    }
+}
