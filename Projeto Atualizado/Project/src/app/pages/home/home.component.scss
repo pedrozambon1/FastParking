@@ -1,0 +1,363 @@
+:host {
+    overflow-x: hidden;
+    transform: 5s all;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 32px;
+}
+.menu{
+        display: contents;
+        box-sizing: border-box;
+        z-index: 2;
+        display: flex;
+        column-gap: 50px;
+        width: 100%;
+        justify-content: space-between;
+        padding: 30px 2%;
+        padding-bottom: 20px !important;
+        align-items: center;
+        background-color: transparent;
+        transition: all 0.5s;
+        position: fixed;
+    
+    background-color: #aee637;
+    
+    img{
+        
+        width: 90px;
+    }
+}
+.btn{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+font-size: 18px;
+
+text-decoration: none;
+
+    border: none;
+    background-color: transparent;
+    color:#012030;
+}
+.body{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+
+    button{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    font-size: 18px;
+
+        border: none;
+        background-color: transparent;
+        color:#012030;
+    }
+}
+.cadastro{
+    background-color: #C1EF60;
+    padding-bottom:20px ;
+}
+.body-cadastro{
+    display: flex;
+    margin: 50px;
+    column-gap: 20px;
+    align-items: center;
+}
+.texto{
+    width: 50%;
+    font-size: 50px;
+    font-weight: 400;
+}
+.img-cadastro{
+    width: 50%;
+    img{
+        width: 100%;
+    }
+}
+.btn-cadastro, .btn-enviar{
+    width: 200px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+font-size: 20px;
+border-radius: 10px;
+margin-bottom: 50px;
+
+    border: none;
+    background-color:#012030 !important;
+    color: #fff;
+}
+
+.item {
+    background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  transition: all 1s ease-in-out;
+}
+.botoes-controle {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  .botoes-controle button {
+    background: #ccc;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin-bottom: 50px;
+  }
+  
+  .botoes-controle button.ativo {
+    background: #C1EF60;
+    cursor: default;
+  }
+
+  .btnImg {
+     width: 147px;
+     height: 145px;
+
+    border-radius: 50%;
+    margin: 5px 20px;
+    padding: 0px;
+    border: 0px;
+    display: block;
+    background-color: #fff;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+  }
+}
+.SobreNos{
+    background-color: #000;
+}
+.body-sobre{
+    column-gap: 40px;
+    row-gap: 60px;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 60px;
+    padding-bottom: 20px;
+}
+
+.title{
+    padding: 20px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.title-msm, .title-cadastro{
+    padding: 20px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #012030;
+}
+.membro{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.nome{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+}
+.mensagem{
+    background-color: #C1EF60;
+    margin-bottom: 50px;
+}
+.body-msm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.parte1{
+    width: 50%;
+    font-size: 30px;
+}
+.parte2{
+    width: 30%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    width: 600px;
+
+    a {
+        font-size: 40px;
+        font-weight: 510;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+.redes{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+}
+.inta{
+    display: flex;
+}
+.email{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+
+    .txt-email{
+        font-size: 35px;
+        text-decoration: none;
+        color: #012030;
+
+    }
+}
+.icon-inta{
+    width: 50px;
+}
+.icon-email{
+    width: 45px;
+}
+.msm1 {
+    display: flex;
+    column-gap: 20px;
+}
+.msm2 {
+    display: flex;
+    box-sizing: border-box;
+    height: 230px;
+    width: 100%;
+}
+
+.toda-msm {
+    row-gap: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-msm {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.input-msm{
+    border: none;
+    background-color: #D9D9D9;
+    color: #A9A9A9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    font-size: 20px;
+    font-weight: 400;
+    
+    font-family: 'Roboto', sans-serif;
+}
+.navCell{
+    display: none;
+}
+
+@media only screen and (max-width: 849px) {
+    .img-cadastro{
+        display: none;
+    }
+    .texto{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .body-msm{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .parte1{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        width: 100%;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .titleParte1{
+        padding: 0px 20px;
+    }
+    .parte2{
+        width: 100%;
+    }
+    .navCell{
+        display: flex;
+    }
+    .body{
+        display: none;
+    }
+    .navCell{
+        display: flex;
+    }
+    .body{
+        display: none;
+    }
+    .body-msm{
+        width: 100%;
+        display: block;
+        justify-content: center;
+    }
+    .toda-msm {
+        row-gap: 0px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .parte1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .parte2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 8px;
+    
+        a {
+            font-size: 40px;
+            font-weight: 510;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    .msm2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .msm1{
+        display: flex;
+        column-gap: 2%;
+    }
+}

@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="header">
+    <div class="menu">
+      <img src="../../../assets/img/Logo-Verde.png" />
+
+      <div class="navCell">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <button class="btn" (click)="returHome()">HOME</button>
+          </button>
+          <button mat-menu-item>
+            <button class="btn" (click)="returSensor()">REAL TIME</button>
+          </button>
+          <button mat-menu-item>
+            <button class="btn" (click)="return2()">VAGAS</button>
+          </button>
+          <button mat-menu-item>
+            <button class="btn" (click)="return()">CONFIGURAÇÕES</button>
+          </button>
+        </mat-menu>
+      </div>
+      <div class="body">
+        <button class="btn" (click)="returHome()">HOME</button>
+        <button class="btn" (click)="returSensor()">REAL TIME</button>
+        <button class="btn" (click)="return2()">VAGAS</button>
+        <button class="btn" (click)="return()">CONFIGURAÇÕES</button>
+      </div>
+    </div>
+  </div>
+</div>

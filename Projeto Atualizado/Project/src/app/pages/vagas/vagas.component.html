@@ -1,0 +1,75 @@
+<app-navbar></app-navbar>
+<ng-container *ngIf="view">
+  <div class="container">
+    <div class="tudo">
+      <div class="parte1">
+        <div class="title">Settings</div>
+        <input matInput class="input-msm" placeholder="edit name" />
+        <input matInput class="input-msm" placeholder="change password" />
+        <input matInput class="input-msm" placeholder="change password" />
+
+        <div class="space">
+          <div class="title">edit-spaces</div>
+          <input matInput class="input-space" type="number" />
+        </div>
+      </div>
+      <!--<div class="parte2">oioi</div>!-->
+      <div class="btn">
+        <button class="btn-entrar" (click)="view = !view">
+          <mat-icon>login</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="!view">
+  <div class="container2">
+    <div class="tudo-exi">
+      <div class="body">
+        <mat-form-field>
+          <mat-label>Ordenar por</mat-label>
+          <mat-select>
+            <mat-option value="one">-Vagas ocupadas</mat-option>
+            <mat-option value="two">-Vagas livres</mat-option>
+            <mat-option value="two">-Tempo de ocupação</mat-option>
+            <mat-option value="two">-Renda gerada</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="exibicao">
+        <div class="title-exi">exibição</div>
+        <div class="body-exi">
+          “Você possui 16,65% de ocupação em seu estacionamento”
+        </div>
+        <canvas
+          baseChart
+          class="chart"
+          [data]="pieChartData"
+          [type]="pieChartType"
+          [options]="pieChartOptions"
+        >
+        </canvas>
+      </div>
+    </div>
+    <div class="collum">
+      <div class="estacionamento"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento" style="background-color: brown"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento" style="background-color: brown"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento" style="background-color: brown"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento"></div>
+      <div class="estacionamento" style="background-color: brown"></div>
+    </div>
+  </div>
+</ng-container>

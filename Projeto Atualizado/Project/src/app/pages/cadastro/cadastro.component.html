@@ -1,0 +1,152 @@
+<div class="container">
+  <mat-stepper [linear]="!isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Informações Pessoas</ng-template>
+        <mat-form-field>
+          <mat-label>Nome</mat-label>
+          <input
+            matInput
+            placeholder="Primeiro nome"
+            formControlName="firstCtrl"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Sobrenome</mat-label>
+          <input
+            matInput
+            placeholder="Ultimo Nome"
+            formControlName="firstCtrl"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>CPF</mat-label>
+          <input
+            matInput
+            placeholder="CPF"
+            formControlName="firstCtrl"
+            mask="00.00.00.000-00"
+            required
+          />
+        </mat-form-field>
+        <div class="fim">
+          <button class="btn" matStepperPrevious routerLink="/login">
+            Back
+          </button>
+          <button class="btn" matStepperNext>Next</button>
+        </div>
+        <div class="btn1">
+          <button type="button" class="saida" (click)="return()">
+            <mat-icon>logout</mat-icon>
+          </button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup">
+      <form [formGroup]="secondFormGroup">
+        <ng-template matStepLabel>Informações da Empresa</ng-template>
+        <mat-form-field>
+          <mat-label>Nome da Empresa</mat-label>
+          <input
+            matInput
+            formControlName="secondCtrl"
+            placeholder="Estacionamento do Jose"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>CEP</mat-label>
+          <input
+            matInput
+            formControlName="secondCtrl"
+            placeholder="00000-000"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Endereço</mat-label>
+          <input
+            matInput
+            formControlName="secondCtrl"
+            placeholder="Rua Gastão Gruls"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Bairro</mat-label>
+          <input
+            matInput
+            formControlName="secondCtrl"
+            placeholder="Vila Scarpelli"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Numero</mat-label>
+          <input
+            matInput
+            formControlName="secondCtrl"
+            placeholder="0000"
+            required
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Complemento</mat-label>
+          <input
+            matInput
+            formControlName="secondCtrl"
+            placeholder="Ex.Casa, Ap.112 Bloco B"
+            required
+          />
+        </mat-form-field>
+        <div class="fim">
+          <button class="btn" matStepperPrevious>Back</button>
+          <button class="btn" matStepperNext>Next</button>
+        </div>
+        <div class="btn1">
+          <button type="button" class="saida" (click)="return()">
+            <mat-icon>logout</mat-icon>
+          </button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+
+      <div class="logo">
+        <img src="../../../assets/img/Logo-Verde.png" />
+      </div>
+      <p>You are now done.</p>
+      <div class="fim">
+        <button class="btn" matStepperPrevious>Back</button>
+        <button class="btn" (click)="return()">Fechar</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
+  <!--<div class="card-header"></div>
+  <div class="body">
+    <button type="button" class="saida" (click)="return()">
+      <mat-icon>logout</mat-icon>
+    </button>
+    <img src="../../../assets/img/Logo-Verde.png" />
+    <div class="title">CADASTRE-SE</div>
+
+    <div class="inputs">
+      <input matInput class="input-msm" placeholder="nome da empresa" />
+      <input matInput class="input-msm" placeholder="E-mail empresarial" />
+      <input matInput class="input-msm" placeholder="CNPJ" />
+    </div>
+
+    <div class="senha">
+      <input matInput class="input-senha" placeholder="senha" />
+      <input matInput class="input-senha" placeholder="Confirme sua senha" />
+    </div>
+    <div class="teste">
+      <button class="btn-entrar">
+        <mat-icon>login</mat-icon>
+      </button>
+    </div>
+  </div>!-->
+</div>

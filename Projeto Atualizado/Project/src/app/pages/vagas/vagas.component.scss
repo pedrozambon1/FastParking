@@ -1,0 +1,210 @@
+.container{
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+}
+.container2{
+    width: 80%;
+    margin: auto;
+}
+.title{
+    font-size: 30px;
+    font-weight: 400;
+    color:#012030;
+}
+.parte1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+ 
+.input-msm{
+    border: none;
+    background-color: #D9D9D9;
+    color: #A9A9A9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 93%;
+
+    font-size: 20px;
+    font-weight: 400;
+    
+    font-family: 'Roboto', sans-serif;
+}
+.space{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.tudo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.input-space{
+    border: none;
+    background-color: #D9D9D9;
+    color: #A9A9A9;
+    padding: 15px;
+    border-radius: 10px;
+    width: 50%;
+
+    font-size: 20px;
+    font-weight: 400;
+    
+    font-family: 'Roboto', sans-serif;
+}
+.btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.btn-entrar{
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #C1EF60;
+    z-index: 2;
+    mat-icon{
+        display: flex;
+        justify-content: center;
+    }
+}
+.tudo-exi{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.exibicao{
+    width: 76%;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+}
+.title-exi{
+    color: #D1D1D1;
+}
+.body-exi{
+    color: #A0A0A0;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.estacionamento{
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+
+}
+.collum{
+    column-gap: 60px;
+    row-gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 60px;
+    column-gap: 20px;
+    align-items: center;
+}
+@media only screen and (max-width: 553px) {
+    .container{
+        width: 97%;
+        height: 70%;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 20px;
+        align-items: center;
+        display: flex;
+    }
+    .space{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-space{
+        border: none;
+        background-color: #D9D9D9;
+        color: #A9A9A9;
+        padding: 15px;
+        border-radius: 10px;
+        width: 90%;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+    }
+    .input-msm{
+        border: none;
+        background-color: #D9D9D9;
+        color: #A9A9A9;
+        padding: 15px;
+        border-radius: 10px;
+        width: 90%;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+    }
+    .parte1{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        width: 96%;
+    }
+}
+@media only screen and (max-width: 766px) {
+    .tudo-exi{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .exibicao{
+        width: 100%;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: #fff;
+        display: flex;
+    }
+}
+@media only screen and (max-width: 538px) {
+    .exibicao{
+        width: 100%;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+    }
+}
+@media only screen and (max-width: 298px) {
+    .input-space{
+        width: 72%;
+    }
+    .input-msm{
+        width: 72%;
+    }
+    .parte1{
+        align-items: center;
+    }
+    .space{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

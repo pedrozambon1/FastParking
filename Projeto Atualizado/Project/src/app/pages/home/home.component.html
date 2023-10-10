@@ -1,0 +1,151 @@
+<div class="container">
+  <div class="header">
+    <div class="menu">
+      <img src="../../../assets/img/Logo-Branco.png" />
+
+      <div class="navCell">
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <button class="btn" routerLink="/home">HOME</button>
+          </button>
+          <button mat-menu-item>
+            <button class="btn" routerLink="/login">LOGIN</button>
+          </button>
+          <button mat-menu-item>
+            <a class="btn" href="#message">CONTATO</a>
+          </button>
+        </mat-menu>
+      </div>
+      <div class="body">
+        <a class="btn" href="#carrosel">HOME</a>
+        <button routerLink="/login">LOGIN</button>
+        <a class="btn" href="#message">CONTATO</a>
+      </div>
+    </div>
+  </div>
+  <div class="carrosel" id="carrosel">
+    <div
+      class="item"
+      [style.backgroundImage]="'url(' + imagens[indexImagemAtiva] + ')'"
+    ></div>
+
+    <div class="botoes-controle">
+      <button
+        *ngFor="let imagem of imagens; index as i"
+        [class.ativo]="i === indexImagemAtiva"
+        (click)="pararTimer(); ativarImagem(i)"
+      ></button>
+    </div>
+    <img
+      *ngFor="let imagem of imagens"
+      [src]="imagem"
+      width="1"
+      height="1"
+      style="opacity: 0; position: fixed"
+    />
+  </div>
+  <div class="cadastro">
+    <div class="title-cadastro">FICOU INTERESSADO?</div>
+
+    <div class="body-cadastro">
+      <div class="texto">
+        Cadastre-se ou acesse sua conta e tenha acesso aos serviços FastParking
+        <button class="btn-cadastro" (click)="link()">cadastre-se</button>
+      </div>
+      <div class="img-cadastro">
+        <img src="../../../assets/img/apertodeMao.svg" />
+      </div>
+    </div>
+  </div>
+  <div class="SobreNos">
+    <div class="title">Sobre Nós</div>
+    <div class="body-sobre">
+      <div class="membro">
+        <button
+          class="btnImg"
+          [class.placeholder]="inputImage"
+          type="button"
+        ></button>
+        <input #inputImage style="display: none" type="file" />
+        <div class="nome">Natan Guimarães</div>
+      </div>
+      <div class="membro">
+        <img src="../../../assets/img/murilo.svg" />
+        <div class="nome">Murilo Azevedo</div>
+      </div>
+      <div class="membro">
+        <!--<button
+          class="btnImg"
+          [class.placeholder]="inputImage"
+          type="button"
+        ></button>
+        <input #inputImage style="display: none" type="file" />!-->
+        <img src="../../../assets/img/joao.svg" />
+        <div class="nome">João Marcelo</div>
+      </div>
+      <div class="membro">
+        <img src="../../../assets/img/carol.svg" />
+        <div class="nome">Carolina Moreira Pavan</div>
+      </div>
+      <div class="membro">
+        <!--<button
+          class="btnImg"
+          [class.placeholder]="inputImage"
+          type="button"
+        ></button>
+        <input #inputImage style="display: none" type="file" />!-->
+        <img src="../../../assets/img/pedro.svg" />
+        <div class="nome">Pedro Zamboni</div>
+      </div>
+    </div>
+  </div>
+  <div class="mensagem" id="message">
+    <div class="title-msm">ENTRE EM CONTATO CONOSCO</div>
+    <div class="body-msm">
+      <div class="parte1">
+        <div class="titleParte1">
+          Entre em contato conosco para exclarecer dúvidas, relatar problemas ou
+          enviar sugestões
+        </div>
+        <div class="redes">
+          <div class="inta">
+            <img class="icon-inta" src="../../../assets/img/instagram.png" />
+          </div>
+          <div class="email">
+            <img class="icon-email" src="../../../assets/img/e-mail.png" />
+            <a
+              class="txt-email"
+              href="mailto:pgfastparking.com"
+              target="_blank"
+            >
+              pgfastparking.com
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="parte2">
+        <div class="toda-msm">
+          <div class="msm1">
+            <input matInput class="input-msm" placeholder="Nome Completo" />
+            <input matInput class="input-msm" placeholder="Assunto" />
+          </div>
+          <div class="msm2">
+            <textarea
+              class="input-msm"
+              matInput
+              placeholder="Mensagem"
+            ></textarea>
+          </div>
+        </div>
+        <div class="btn-msm">
+          <button class="btn-enviar" mat-flat-button color="accent">
+            ENVIAR
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="login">
+  <div class="container">
+    <div class="btn1">
+      <button type="button" class="saida" (click)="return()">
+        <mat-icon>logout</mat-icon>
+      </button>
+    </div>
+
+    <img src="../../../assets/img/Logo-Verde.png" />
+    <div class="title">LOGIN</div>
+
+    <form [formGroup]="firstFormGroup">
+      <mat-form-field class="input">
+        <mat-label>E-mail</mat-label>
+        <input matInput formControlName="firstCtrl" required />
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Senha</mat-label>
+        <input matInput formControlName="firstCtrl" required />
+      </mat-form-field>
+    </form>
+    <div class="link">
+      <a (click)="return3()">CADASTRE-SE</a>
+      <a (click)="openForget()">ESQUECI MINHA SENHA</a>
+    </div>
+    <div class="btn2">
+      <button class="btn-entrar" (click)="change()">
+        <mat-icon>login</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
