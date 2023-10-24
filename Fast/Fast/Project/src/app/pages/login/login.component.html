@@ -1,0 +1,41 @@
+<div class="login">
+  <div class="container">
+    <div class="btn1">
+      <button type="button" class="saida" (click)="return()">
+        <mat-icon>logout</mat-icon>
+      </button>
+    </div>
+
+    <img src="../../../assets/img/Logo-Verde.png" />
+    <div class="title">LOGIN</div>
+    <div class="forms">
+      <form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+        <mat-form-field class="input">
+          <mat-label>E-mail</mat-label>
+          <input matInput formControlName="email" required />
+        </mat-form-field>
+        <div class="teste">
+          <mat-form-field class="input">
+            <mat-label>Senha</mat-label>
+            <input matInput formControlName="password" required />
+          </mat-form-field>
+          <section class="example-section">
+            <mat-checkbox class="example-margin" formControlName="check"
+              >Manter logado?</mat-checkbox
+            >
+          </section>
+        </div>
+      </form>
+    </div>
+
+    <div class="link">
+      <a (click)="return3()">CADASTRE-SE</a>
+      <a (click)="openForget()">ESQUECI MINHA SENHA</a>
+    </div>
+    <div class="btn2">
+      <button class="btn-entrar" type="submit">
+        <mat-icon>login</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
